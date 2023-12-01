@@ -50,6 +50,7 @@ passport.deserializeUser(User.deserializeUser());
 // initialize the passport
 app.use(passport.initialize());
 app.use(passport.session());
+
 let indexRouter = require('../routes/index');
 let usersRouter = require('../routes/users');
 let certificationsRouter = require('../routes/certifications');
